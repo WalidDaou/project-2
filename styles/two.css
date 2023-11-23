@@ -1,0 +1,104 @@
+        * {
+
+            box-sizing: border-box;
+            margin: 0;
+            padding: 0;
+        }
+
+
+
+        .brand-logo {
+            padding-left: 20px;
+
+        }
+
+        .header__top {
+            display: flex;
+            justify-content: space-between;
+            width: 100vw;
+            text-align: center;
+            font-size: 25px;
+            padding-top: 20px;
+            padding-bottom: 10px;
+            position: fixed;
+            box-sizing: border-box;
+            background-color: white;
+            z-index: 1;
+
+
+        }
+
+        .link {
+            color: black;
+
+
+        }
+
+
+        .header__stuff {
+
+
+            display: flex;
+
+            overflow: hidden;
+
+
+        }
+
+
+        .image {
+            width: 100%;
+            height: auto;
+            overflow: hidden;
+
+
+        }
+
+
+
+
+        #right {
+
+            margin-left: 25px;
+        }
+
+
+        .header__text {
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            font-size: 25px;
+            margin-top: 50px;
+            gap: 20px;
+
+
+
+
+        }
+
+        .h1 {
+            padding: 35px;
+            font-size: 45px;
+
+
+
+        }
+
+        .button__top {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            margin: 30px;
+            height: 45px;
+            width: 200px;
+            font-size: 20px;
+            background-color: black;
+            color: white;
+            border-radius: 30px;
+        }
+
+        .media {
+            height: 15px;
+            width: 15px;
+        }

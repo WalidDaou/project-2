@@ -1,0 +1,135 @@
+solution-responsive-fb.html
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Facebook</title>
+  </head>
+  <body>
+    <style>
+      * {
+        box-sizing: border-box;
+        margin: 0;
+        padding: 0;
+      }
+
+      body {
+        display: flex;
+      }
+      section {
+        min-height: 100vh;
+        width: 50%;
+      }
+
+      .first-half {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        padding: 60px;
+      }
+
+      .first-half h1 {
+        font-size: 48px;
+        color: #1877f2;
+      }
+
+      .first-half p {
+        font-size: 20px;
+      }
+      
+      @media only screen and (max-width: 850px){
+        body{
+          /* background-color: red; */
+          flex-direction: column;
+          align-items: center;
+          gap: 20px;
+          height: 100vh;
+          justify-content: center;
+        }
+        
+        section {
+          width: unset;
+          min-height: unset;
+        }
+        .first-half{
+          width: 350px;
+          padding: unset;
+        }
+        
+        .first-half h1 {
+          text-align: center;
+        }
+      }
+      @media only screen and (max-width: 430px){
+        .first-half{
+          width: 250px;
+        }
+        .second-half form {
+          min-width: 250px;
+        }
+      }
+    </style>
+    <section class="first-half">
+      <h1>facebook</h1>
+      <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Recusandae, inventore commodi iure enim, dolor quo libero veniam velit, asperiores adipisci error deserunt dicta sapiente iusto eum magni obcaecati ipsam rerum?</p>
+    </section>
+    <section class="second-half">
+      <form>
+        <input type="text" placeholder="Email or username" />
+        <input type="password" placeholder="Password" name="password" id="" />
+        <button>Log In</button>
+        <a href="">Forgotten password</a>
+        <hr>
+        <div>
+          <button class="green-button">Create new account</button>
+        </div>
+      </form>
+      <style>
+        .second-half {
+          display: flex;
+          align-items: center;
+          justify-content: center;
+        }
+        form {
+          border: 1px solid gray;
+          display: flex;
+          flex-direction: column;
+          align-items: center;
+          gap: 15px;
+          box-shadow: 5px 5px 5px rgba(0, 0, 0, 0.598);
+          padding: 20px;
+          border-radius: 10px;
+          min-width: 350px;
+        }
+        form > *:not(hr) {
+          min-height: 40px;
+          text-align: center;
+          width: 100%;
+        }
+        
+        hr {
+            width: 100%;
+        }
+        input {
+          padding: 10px;
+          border-radius: 5px;
+          border: 1px solid rgba(0, 0, 0, 0.305);
+        }
+
+        button {
+          color: white;
+          border-radius: 5px;
+          background-color: #1877f2;
+          border: none;
+        }
+
+        .green-button {
+          background-color: #42b72a;
+          padding: 0 20px;
+          min-height: 40px;
+        }
+      </style>
+    </section>
+  </body>
+</html>
